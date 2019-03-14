@@ -56,14 +56,31 @@ def ref():
     randomRef=str(x)
     rand.set(randomRef)
 
-
-    CoF=float(Fries.get())
-    CoD=float(Drinks.get())
-    CoFilet=float(Filet.get())
-    CoBurger=float(Burger.get())
-    CoChickenBurger=float(Chicken_Burger.get())
-    
-
+    if(Fries.get()==""):
+        CoF=0
+        Fries.set("0")
+    else:
+        CoF=float(Fries.get())
+    if(Drinks.get()==""):
+        CoD=0
+        Drinks.set("0")
+    else:
+        CoD=float(Drinks.get())
+    if(Filet.get()==""):
+        CoFilet=0
+        Filet.set("0")
+    else:
+        CoFilet=float(Filet.get())
+    if(Burger.get()==""):
+        CoBurger=0
+        Burger.set("0")
+    else:
+        CoBurger=float(Burger.get())
+    if(Chicken_Burger.get()==""):
+        CoChickenBurger=0
+        Chicken_Burger.set("0")
+    else:
+        CoChickenBurger=float(Chicken_Burger.get())
 
     CostofFries = CoF * 0.99
     CostofDrinks = CoD * 1.00
